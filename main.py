@@ -3,7 +3,7 @@ from maze.maze import Maze
 
 
 def main():
-    maze = Maze("2.maze.example.txt")
+    maze = Maze("3.maze.example.txt")
     maze.load()
 
     dfs = DFS(maze=maze)
@@ -18,6 +18,7 @@ def main():
         for step in path:
             print(f"[{step.x}, {step.y}]", end="")
             print(" -> ", end="")
+        print("GOAL")
         print("\n")
 
     maze.reader.reconstruct_text(maze.mazeGraph)

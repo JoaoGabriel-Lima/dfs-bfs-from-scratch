@@ -12,7 +12,7 @@ class Maze:
     def load(self):
         lines = self.reader.read()
 
-        self.maze = [list(line.strip()) for line in lines]
+        self.maze = [list(line.rstrip()) for line in lines]
         self.mazeGraph = [[None for _ in range(len(row))] for row in self.maze]
 
         self.create_nodes()
