@@ -34,7 +34,6 @@ class DFS:
         current = end
         while current and current != start:
             path.append(current)
-            print(f"({current.x}, {current.y}) <- ({current.visited_from.x}, {current.visited_from.y})")
             current = current.visited_from
             current.is_path = True
         path.append(start)
