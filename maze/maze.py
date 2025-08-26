@@ -15,11 +15,8 @@ class Maze:
         self.maze = [list(line.strip()) for line in lines]
         self.mazeGraph = [[None for _ in range(len(row))] for row in self.maze]
 
-        print(self.maze)
-
         self.create_nodes()
         self.connect_nodes()
-        print(self.mazeGraph)
 
     def create_nodes(self):
         for y, row in enumerate(self.maze):
@@ -56,17 +53,6 @@ class Maze:
                 if y < len(self.mazeGraph) - 1 and not self.mazeGraph[y + 1][x].is_wall:
                     node.down = self.mazeGraph[y + 1][x]
 
-    def get_neighbors(self, node: MazeNode):
-        neighbors = []
-        if node.left:
-            neighbors.append(node.left)
-        if node.right:
-            neighbors.append(node.right)
-        if node.up:
-            neighbors.append(node.up)
-        if node.down:
-            neighbors.append(node.down)
-        return neighbors
 
     def is_path_clear(self, start: MazeNode, end: MazeNode):
         for neighbor in self.get_neighbors(start):

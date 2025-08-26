@@ -24,6 +24,8 @@ class MazeReader:
                     text += "A"
                 elif node.is_goal:
                     text += "B"
+                elif node.is_path:
+                    text += "O"
                 elif node.visited:
                     text += "X"
                 else:
@@ -32,6 +34,9 @@ class MazeReader:
 
         file_path = f"maze/maze-examples/reconstructed/{self.file_name.split('.txt')[0]}.reconstructed.txt"
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+        for line in text.splitlines():
+            print(line)
 
         with open(file_path, "w") as file:
             file.write(text)

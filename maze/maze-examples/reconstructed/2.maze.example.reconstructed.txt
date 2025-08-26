@@ -1,0 +1,16 @@
+###                 #########
+#   ###################XXX#X#
+# ####                #X#X#X#
+# ################### #X#X#X#
+#                     #X#X#X#
+##################### #X#X#X#
+#XXX##OOOOOOOO        #X#X#X#
+#X#X##O###X##O#########X#X#X#
+#X#OOOO#XXX##B#XXXXXXXXX#X#X#
+#X#O##X################X#X#X#
+###O##XXXXXXXXXXXXX####X#X#X#
+###O##############X##X#X#X#X#
+###OOOOXXXXXXXXX##XXXX#X#X#X#
+######O########X#######X#X#X#
+######O####XXXXXXXXXXXXX#XXX#
+AOOOOOO######################
