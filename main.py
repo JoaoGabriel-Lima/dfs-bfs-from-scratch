@@ -12,9 +12,9 @@ def main():
     print(f"DFS result: {result}")
     print(f"Number of visited nodes: {len(dfs.visited)}")
     if result:
-        print("Getting path")
+        print("*"*15)
         path = dfs.get_path(start=maze.startNode, end=maze.endNode)
-        print(f"Path found: {path}")
+        print(f"It took {len(path)} steps to reach the goal.")
         for step in path:
             print(f"[{step.x}, {step.y}]", end="")
             print(" -> ", end="")
