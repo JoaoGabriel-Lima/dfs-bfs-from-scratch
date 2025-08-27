@@ -12,7 +12,7 @@ class MazeReader:
         with open(self.file_path, "r") as file:
             return file.readlines()
 
-    def reconstruct_text(self, mazeGraph):
+    def reconstruct_text(self, mazeGraph, method: str):
         text = ""
         for row in mazeGraph:
             for node in row:
@@ -32,7 +32,7 @@ class MazeReader:
                     text += " "
             text += "\n"
 
-        file_path = f"maze/maze-examples/reconstructed/{self.file_name.split('.txt')[0]}.reconstructed.txt"
+        file_path = f"maze/maze-examples/reconstructed/{self.file_name.split('.txt')[0]}.{method}.reconstructed.txt"
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
         for line in text.splitlines():
