@@ -1,6 +1,6 @@
 # DFS and BFS from scratch — Maze Solver
 
-This repository contains from-scratch implementations of Depth-First Search (DFS) and Breadth-First Search (BFS) applied to solving text-based mazes. The goal is to practice graph fundamentals, data structures, and path reconstruction. I’m practicing as part of Harvard’s CS50 AI course: [CS50’s Introduction to AI with Python](https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python).
+This repository contains from-scratch implementations of Depth-First Search (DFS) and Breadth-First Search (BFS) applied to solving text-based mazes. The goal is to practice graph fundamentals, data structures, and path reconstruction.
 
 ## Overview
 
