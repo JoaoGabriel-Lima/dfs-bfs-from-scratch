@@ -22,7 +22,7 @@ def main():
         print("END")
         print("\n")
 
-    maze.reader.reconstruct_text(maze.mazeGraph, "BFS")
+    maze.reader.reconstruct_text(maze.mazeGraph, "DFS")
 
     print("*"*20)
     print("\n")
